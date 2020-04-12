@@ -1,1 +1,124 @@
 # 每周总结可以写在这里
+
+## Front-end Developer learning techniques
+    - Front-end skill model
+        - Feild knowledge (depend on job or porduct)
+        - Front-end specific knowlege (recreate ui from mockup ...)
+        - Programming skill
+        - Architect skill
+        - Engineering skill
+    - Method of learning
+        1. Orginized relationship between different pieces of knowldge
+            - Ordered relationship
+            - Combination relationship
+            - Dimensional relationship
+            - Sub-set relationship
+            - Full set
+        2. Back track, find what is the origin of this piece of knowldge, find standard and documention and reputable person in this area 
+
+## Front-end Technologies
+    - HTML
+        - HTML as Programming Languange
+            - Syntax
+            - Lexical
+        - HTML as SGML
+            - DTD(Documentation type Definition)
+            - Entity
+        - HTML as XML
+            - Namespace
+                - SVG
+                - Mathml
+                - ARIA (Accessible Rich Internet Applications)
+            - Tag
+                - body
+                - h1
+                - h2
+                - header
+                - div
+                - ...
+    - JavaScript
+        - Grammar
+            - Lexical
+                - WhiteSpace
+                - Line Terminator
+                - Comment
+                - Token
+                    - Keyword
+                    - Identifier
+                    - Punctuator
+                    - Numeric Literal
+                    - String Literal
+                    - Regular Expression Literal
+                    - Template
+            - Syntax
+                - Atom
+                - Expression
+                - Structural
+                - Script & Module
+        - Semantic
+        - Runtime
+            - Type
+                - Number
+                - String
+                - Boolean
+                - Null
+                - Undefined
+                - Object
+                - Symbol
+                - Inertal Type
+                    - Reference
+                    - Completion Record
+            - RunJob
+                - Job
+                - Script & Module
+                - Promise
+                - Function
+                - Statement
+                - Expression
+                - Literal
+                - Identifier
+    - CSS
+        - Grammer / Syntax
+        - @ Rule
+        - Common Rules
+            - Selector
+                - Basic selector
+                    - .class
+                    - #id
+                    - tagname
+                    - -
+                    - attribute selector
+            - Property
+            - Value
+        - Mechanism
+            - Layout
+            - Pseudo-element
+            - Animation
+    - API
+        - Broswer API
+            - DOM
+                - Nodes
+                - Events
+                - Ranges
+        - Node, Electron, Ionic ...
+
+## Front-end Engineering System
+	- Create career plan
+	- All knowledge must be in a system
+	- Different view on your job
+		- product view
+		- solve technical challenge
+		- engineering 
+	- Data driven thinking
+	- Tool chain
+		- version control
+	- Front-end build is fast , check in build, add lint and rule check
+	- Front end architecture
+		- reusable component, code, module
+		- most reused code
+			- url (read and anyalize url)
+			- AJAX
+			- ENV (detect device environment)
+		- UI component
+		- different module by different product
+
