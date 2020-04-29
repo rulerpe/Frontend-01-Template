@@ -1,0 +1,31 @@
+<script>
+  function convertStringToNumber(string, base) {
+    var chars = string.split("");
+    var number = 0;
+    for (var i = 0; i < chars.length; i++) {
+      // conver all char to uppercase
+      let charCode = chars[i].toUpperCase().codePointAt(0);
+      number = number * base;
+      // check base
+      if (base > 10) {
+        // base is larger then 10, check both alphabet characters andd number
+        if (charCode >= 65 && charCode <= 90) {
+          number += 10 + charCode - "A".codePointAt(0);
+        } else if (charCode >= 48 && charCode <= 57) {
+          number += charCode - "0".codePointAt(0);
+        }
+      } else {
+        // if base smaller then 10, then check only numbers, retrun NaN if it's an alphabet characters
+        if (charCode < 48 && charCode > 57) return NaN;
+        number += charCode - "0".codePointAt(0);
+      }
+    }
+    return number;
+  }
+
+  // code testing
+  const string = "0Faa4FF";
+  const base = 16;
+  console.log("convertStringToNumber", convertStringToNumber(string, base));
+  console.log("parseInt", parseInt(string, base));
+</script>
