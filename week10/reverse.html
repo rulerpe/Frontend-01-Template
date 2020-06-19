@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="a">
+      <span>1</span>
+      <p>2</p>
+      <a href="">3</a>
+      <div>4</div>
+    </div>
+    <script>
+      let element = document.getElementById("a");
+      function reverseChildren(element) {
+        let eles = new Range();
+        eles.selectNodeContents(element);
+        let freg = eles.extractContents();
+
+        let l = freg.childNodes.length;
+        while (l-- > 0) {
+          freg.appendChild(freg.childNodes[l]);
+        }
+        element.appendChild(freg);
+      }
+      reverseChildren(element);
+    </script>
+  </body>
+</html>
